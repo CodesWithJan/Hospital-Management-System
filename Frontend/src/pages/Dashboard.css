@@ -1,0 +1,153 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+/* Sidebar */
+
+.dashboard-sidebar {
+    width: 240px;
+    background: #123b65;
+    color: white;
+    padding: 25px 15px;
+    flex-shrink: 0;
+}
+
+.dashboard-sidebar h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.dashboard-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dashboard-sidebar nav a {
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.dashboard-sidebar nav a:hover {
+    background: #2563a6;
+}
+
+/* Main Content */
+
+.dashboard-main {
+    flex: 1;
+    padding: 30px;
+    min-width: 0;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.dashboard-header h1 {
+    color: #123b65;
+    margin: 0 0 8px;
+}
+
+.dashboard-header p {
+    color: #64748b;
+}
+
+.admin-profile {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+/* Cards */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+    color: #475569;
+}
+
+.dashboard-card h1 {
+    font-size: 35px;
+    color: #2563eb;
+}
+
+.dashboard-card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-card a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section */
+
+.dashboard-welcome {
+    margin-top: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.dashboard-welcome h2 {
+    color: #123b65;
+}
+
+.dashboard-welcome p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+    }
+
+    .dashboard-sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

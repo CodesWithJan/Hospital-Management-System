@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.department-container {
+    margin-left: 260px;
+    padding: 30px;
+    min-height: 100vh;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.doctor-form-card select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.department-container h1 {
+    color: #123b65;
+}
+
+.department-container > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.department-form-card,
+.department-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.department-form-card h2,
+.department-table-card h2 {
+    color: #123b65;
+    margin-top: 0;
+}
+
+.department-form-card form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.department-form-card input,
+.department-form-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.department-form-card textarea {
+    min-height: 45px;
+    resize: vertical;
+}
+
+.department-form-card input:focus,
+.department-form-card textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.department-form-card button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.department-form-card button:hover {
+    background: #1d4ed8;
+}
+
+.department-form-card .department-cancel-btn {
+    background: #64748b;
+}
+
+.department-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.department-table-card table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+.department-table-card th,
+.department-table-card td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.department-table-card th {
+    background: #eff6ff;
+    color: #123b65;
+}
+
+.department-edit-btn,
+.department-delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.department-edit-btn {
+    background: #16a34a;
+}
+
+.department-delete-btn {
+    background: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .department-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .department-form-card form {
+        grid-template-columns: 1fr;
+    }
+}

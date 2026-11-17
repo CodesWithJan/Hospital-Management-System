@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+}
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-section {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+}
+
+.page-content {
+    padding: 25px;
+}

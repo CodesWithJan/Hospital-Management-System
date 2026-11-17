@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.prescription-container {
+    margin-left: 260px;
+    padding: 30px;
+    min-height: 100vh;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.prescription-container h1 {
+    color: #123b65;
+}
+
+.prescription-container > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.prescription-form-card,
+.prescription-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.prescription-form-card h2,
+.prescription-table-card h2 {
+    color: #123b65;
+    margin-top: 0;
+}
+
+.prescription-form-card form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.prescription-form-card input,
+.prescription-form-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.prescription-form-card input:focus,
+.prescription-form-card select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.prescription-form-card button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.prescription-form-card button:hover {
+    background: #1d4ed8;
+}
+
+.prescription-form-card .prescription-cancel-btn {
+    background: #64748b;
+}
+
+.prescription-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.prescription-table-card table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+}
+
+.prescription-table-card th,
+.prescription-table-card td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.prescription-table-card th {
+    background: #eff6ff;
+    color: #123b65;
+}
+
+.prescription-edit-btn,
+.prescription-delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.prescription-edit-btn {
+    background: #16a34a;
+}
+
+.prescription-delete-btn {
+    background: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .prescription-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .prescription-form-card form {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,149 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.billing-container {
+    margin-left: 260px;
+    padding: 30px;
+    min-height: 100vh;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.billing-container h1 {
+    color: #123b65;
+}
+
+.billing-container > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.billing-form-card,
+.billing-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.billing-form-card h2,
+.billing-table-card h2 {
+    color: #123b65;
+    margin-top: 0;
+}
+
+.billing-form-card form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.billing-form-card input,
+.billing-form-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.billing-form-card input:focus,
+.billing-form-card select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.billing-form-card button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.billing-form-card button:hover {
+    background: #1d4ed8;
+}
+
+.billing-form-card .billing-cancel-btn {
+    background: #64748b;
+}
+
+.billing-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.billing-table-card table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+.billing-table-card th,
+.billing-table-card td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.billing-table-card th {
+    background: #eff6ff;
+    color: #123b65;
+}
+
+.billing-status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.billing-status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.billing-status.paid {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.billing-status.cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.billing-edit-btn,
+.billing-delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.billing-edit-btn {
+    background: #16a34a;
+}
+
+.billing-delete-btn {
+    background: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .billing-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .billing-form-card form {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,134 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.doctors-container {
+    margin-left: 260px;
+    padding: 30px;
+    min-height: 100vh;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.doctors-container h1 {
+    color: #123b65;
+}
+
+.doctors-container > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.doctor-form-card,
+.doctor-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.doctor-form-card h2,
+.doctor-table-card h2 {
+    color: #123b65;
+    margin-top: 0;
+}
+
+.doctor-form-card form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.doctor-form-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.doctor-form-card input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.doctor-form-card button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.doctor-form-card button:hover {
+    background: #1d4ed8;
+}
+
+.doctor-form-card .cancel-btn {
+    background: #64748b;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.doctor-table-card table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+.doctor-table-card th,
+.doctor-table-card td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.doctor-table-card th {
+    background: #eff6ff;
+    color: #123b65;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.edit-btn {
+    background: #16a34a;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .doctors-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .doctor-form-card form {
+        grid-template-columns: 1fr;
+    }
+}
+.doctor-form-card select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}

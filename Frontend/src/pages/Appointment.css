@@ -1,0 +1,127 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.appointment-container {
+    margin-left: 260px;
+    padding: 30px;
+    min-height: 100vh;
+    background: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+
+.appointment-container h1 {
+    color: #123b65;
+}
+
+.appointment-container > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.appointment-form-card,
+.appointment-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.appointment-form-card h2,
+.appointment-table-card h2 {
+    color: #123b65;
+    margin-top: 0;
+}
+
+.appointment-form-card form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.appointment-form-card input,
+.appointment-form-card select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.appointment-form-card input:focus,
+.appointment-form-card select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.appointment-form-card button {
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.appointment-form-card button:hover {
+    background: #1d4ed8;
+}
+
+.appointment-form-card .appointment-cancel-btn {
+    background: #64748b;
+}
+
+.appointment-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.appointment-table-card table {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+}
+
+.appointment-table-card th,
+.appointment-table-card td {
+    padding: 13px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.appointment-table-card th {
+    background: #eff6ff;
+    color: #123b65;
+}
+
+.appointment-edit-btn,
+.appointment-delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.appointment-edit-btn {
+    background: #16a34a;
+}
+
+.appointment-delete-btn {
+    background: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .appointment-container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .appointment-form-card form {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,29 @@
+
+.navbar {
+    height: 65px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    margin-left: 240px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.navbar h3 {
+    color: #163b65;
+    margin: 0;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #163b65;
+    font-weight: bold;
+}
+
+.profile-icon {
+    font-size: 24px;
+}
