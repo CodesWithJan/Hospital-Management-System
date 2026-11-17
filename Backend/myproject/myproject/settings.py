@@ -76,14 +76,16 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases 
 
+import os
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'HospitalManagement',
-        'USER': 'root',
-        'PASSWORD': 'mj@29',
-        'HOST': 'localhost' ,
-        'PORT': 3306
+        'NAME': 'hospital',
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
